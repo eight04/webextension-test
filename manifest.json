@@ -13,12 +13,16 @@
   "permissions": [
     "<all_urls>"
   ],
-  "background": {
-    "scripts": [
-      "background.js"
-    ]
-  },
+  "content_scripts": [
+    {
+      "matches": ["file:///*"],
+      "js": ["content.js"]
+    }
+  ],
   "browser_action": {
     "default_title": "Test"
-  }
+  },
+  "web_accessible_resources": [
+    "worker.js"
+  ]
 }
