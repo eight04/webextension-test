@@ -1,12 +1,7 @@
-self.addEventListener("message", e => {
-  e.waitUntil(
-    self.clients.get(e.clientId)
-      .then(client => 
-        client.postMessage(`sw get data: ${e.data}`);
-      );
-  );
-});
-
-self.addEventListener("activate", e => {
-  e.waitUntil(self.clients.claim());
+let clients = 0;
+self.addEventListener("connect", e => {
+  clients++;
+  const port = e.ports[0];
+  port.start();
+  port.postMessage(["Connected clients", clients])
 });
