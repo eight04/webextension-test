@@ -12,5 +12,7 @@ navigator.serviceWorker.register(url)
     });
   })
   .catch(err => {
+    // related?
+    // https://bugzilla.mozilla.org/show_bug.cgi?id=1344561
     console.log("register failed", err);
   });
