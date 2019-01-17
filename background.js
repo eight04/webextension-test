@@ -1,6 +1,8 @@
-browser.tabs.executeScript({
-  code: "'success'",
-  allFrames: true,
-  frameId: 0
-})
-  .then(console.log, console.error);
+chrome.browserAction.onClicked.addListener(() => {
+  chrome.downloads.download({
+    filename: "👁‍🗨.txt",
+    url: "http://example.com"
+  }, r => {
+    console.log(chrome.runtime.lastError, r);
+  })
+});
