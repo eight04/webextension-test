@@ -10,15 +10,14 @@
       "id": "test@eight04.blogspot.com"
     }
   },
-  "permissions": [
-    "downloads"
-  ],
+  "permissions": [],
   "background": {
-    "scripts": [
-      "background.js"
-    ]
+    "scripts": []
   },
-  "browser_action": {
-    "default_title": "Test"
-  }
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["content.js"]
+    }
+  ]
 }
