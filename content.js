@@ -1,8 +1,20 @@
-const style = document.createElement("style");
-style.textContent = `
-@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
-* {
-  font-family: 'Major Mono Display', monospace;
+{
+  const s = document.createElement("style");
+  s.disabled = true;
+  console.log(s.disabled);
 }
-`;
-document.documentElement.appendChild(style);
+
+{
+  const s = document.createElement("style");
+  document.head.append(s);
+  s.disabled = true;
+  console.log(s.disabled);
+}
+
+{
+  const s = document.createElement("style");
+  s.textContent = " ";
+  document.head.append(s);
+  s.disabled = true;
+  console.log(s.disabled);
+}
