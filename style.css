@@ -1,0 +1,18 @@
+div {
+  width: 200px;
+  height: 200px;
+  animation: change-height 1s infinite;
+  background: orange;
+}
+
+@keyframes change-height {
+  from {
+    height: 200px;
+  }
+  50% {
+    height: 300px;
+  }
+  to {
+    height: 200px;
+  }
+}
