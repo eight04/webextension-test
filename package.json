@@ -3,13 +3,11 @@
   "version": "0.0.0",
   "author": "eight04 <eight04@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "webextension-polyfill": "^0.3.0"
-  },
+  "dependencies": {},
   "scripts": {
     "start": "web-ext run"
   },
   "devDependencies": {
-    "web-ext": "^3.0.0"
+    "web-ext": "^4.0.0"
   }
 }
