@@ -11,7 +11,7 @@
     }
   },
   "permissions": [
-    "contextMenus"
+    "identity"
   ],
   "background": {
     "scripts": [
@@ -19,5 +19,6 @@
     ]
   },
   "content_scripts": [],
-  "browser_action": {}
+  "browser_action": {},
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5FrnkxqPR136I/BBEoB1GOhdL6ilgkGsqpVj4kk1LN+ghEimzAhAWDSzxshS/w8JAcklcHCqgSkA8gUGNkQM13HEU47bHSnHJhh4YhZCguXPDGWt/BmVI6EQl95CNvM+6uKd6SfA3F1pCnA7jyIQ5ohszmQlB6HXGnIkXuDEg6l3aq2G4NE5r1r/dScEur06oJVObKimP7jSpcq6pSoAP1oxFYZsPDLvNi4+RNH/ToV7pdOzr60fIQABkd8ueX4Q2ztSqCdwal7kECqULcqmnLwBazmfTN+Jf94IwfD6bcEWbeIKmBr5Hps6tqSkqQ4ouoQRB1y+5cHZpI7YQmMicwIDAQAB"
 }
