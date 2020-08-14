@@ -1,6 +1,3 @@
-browser.tabs.executeScript({
-  code: "'success'",
-  allFrames: true,
-  frameId: 0
-})
-  .then(console.log, console.error);
+browser.browserAction.onClicked.addListener(() => {
+  browser.windows.create({type: "popup", state: "minimized"}).catch(console.error);
+});
