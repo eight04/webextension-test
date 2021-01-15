@@ -8,6 +8,6 @@
     "start": "web-ext run"
   },
   "devDependencies": {
-    "web-ext": "^4.3.0"
+    "web-ext": "^5.5.0"
   }
 }
