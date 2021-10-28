@@ -8,6 +8,6 @@
     "start": "web-ext run --config-discovery=false -f=\"C:\\Program Files\\Firefox Developer Edition\\firefox.exe\""
   },
   "devDependencies": {
-    "web-ext": "^2.6.0"
+    "web-ext": "^6.5.0"
   }
 }
