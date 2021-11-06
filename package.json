@@ -5,9 +5,14 @@
   "license": "MIT",
   "dependencies": {},
   "scripts": {
-    "start": "web-ext run --config-discovery=false -f=\"C:\\Program Files\\Firefox Developer Edition\\firefox.exe\""
+    "start": "web-ext run"
   },
   "devDependencies": {
     "web-ext": "^6.5.0"
+  },
+  "webExt": {
+    "ignoreFiles": [
+      "package*.json"
+    ]
   }
 }

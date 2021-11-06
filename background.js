@@ -1,6 +1,6 @@
-browser.tabs.executeScript({
-  code: "'success'",
-  allFrames: true,
-  frameId: 0
-})
-  .then(console.log, console.error);
+browser.browserAction.onClicked.addListener(() => {
+  browser.tabs.create({
+    url: browser.runtime.getURL('index.html')
+  })
+    .catch(console.error);
+});
