@@ -8,7 +8,7 @@
     "start": "web-ext run"
   },
   "devDependencies": {
-    "web-ext": "^6.5.0"
+    "web-ext": "^6.7.0"
   },
   "webExt": {
     "ignoreFiles": [

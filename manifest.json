@@ -11,7 +11,9 @@
     }
   },
   "permissions": [
-    "<all_urls>"
+    "<all_urls>",
+    "webRequest",
+    "webRequestBlocking"
   ],
   "background": {
     "scripts": [
@@ -21,8 +23,5 @@
   },
   "browser_action": {
     "default_title": "Test"
-  },
-  "web_accessible_resources": [
-    "test.png"
-  ]
+  }
 }
