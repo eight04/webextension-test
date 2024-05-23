@@ -1,7 +1,7 @@
-browser.browserAction.onClicked.addListener(tab => {
-  browser.tabs.create({
-    url: "http://example.com",
-    openerTabId: tab.id
-  }).catch(console.error);
+browser.browserAction.onClicked.addListener(() => {
+  browser.downloads.download({
+    url: 'http://example.com',
+    filename: '%.html',
+    saveAs: false
+  });
 });
-

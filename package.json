@@ -5,7 +5,9 @@
   "license": "MIT",
   "dependencies": {},
   "scripts": {
-    "start": "web-ext run"
+    "start": "web-ext run",
+    "start-chrome": "web-ext run --target=chromium",
+    "build": "web-ext build --overwrite-dest"
   },
   "devDependencies": {
     "web-ext": "^6.7.0"
