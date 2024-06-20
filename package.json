@@ -10,7 +10,7 @@
     "build": "web-ext build --overwrite-dest"
   },
   "devDependencies": {
-    "web-ext": "^6.7.0"
+    "web-ext": "^8.1.0"
   },
   "webExt": {
     "ignoreFiles": [

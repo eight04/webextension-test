@@ -1,7 +1,13 @@
 browser.browserAction.onClicked.addListener(() => {
-  browser.downloads.download({
-    url: 'http://example.com',
-    filename: '%.html',
-    saveAs: false
-  });
+  const files = [
+    '1. foo/bar.html',
+    '1.foo bar/baz.html',
+  ];
+  for (const filename of files) {
+    browser.downloads.download({
+      url: 'http://example.com',
+      filename,
+      saveAs: false
+    });
+  }
 });
