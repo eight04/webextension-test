@@ -1,6 +1,7 @@
-browser.tabs.executeScript({
-  code: "'success'",
-  allFrames: true,
-  frameId: 0
-})
-  .then(console.log, console.error);
+browser.browserAction.onClicked.addListener(() => {
+  fetch("https://example.com")
+    .then(response => response.text())
+    .then(text => {
+      console.log(text);
+    });
+});
