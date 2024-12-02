@@ -3,11 +3,10 @@
   "version": "0.0.0",
   "author": "eight04 <eight04@gmail.com>",
   "license": "MIT",
-  "dependencies": {},
   "scripts": {
-    "start": "web-ext run --config-discovery=false -f=\"C:\\Program Files\\Firefox Developer Edition\\firefox.exe\""
+    "start": "web-ext run"
   },
   "devDependencies": {
-    "web-ext": "^6.5.0"
+    "web-ext": "^8.3.0"
   }
 }
