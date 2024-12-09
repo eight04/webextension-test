@@ -1,7 +1,5 @@
 browser.browserAction.onClicked.addListener(() => {
-  fetch("https://example.com")
-    .then(response => response.text())
-    .then(text => {
-      console.log(text);
-    });
+  browser.tabs.create({
+    url: browser.runtime.getURL("popup.html")
+  })
 });
